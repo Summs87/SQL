@@ -1,0 +1,30 @@
+Create table Jewelry(id integer primary key, name text, quantity integer, Metal Text, Price integer);
+
+insert into jewelry values 
+( 1, 'Butterfly necklace', 33, 'silver', 25);
+insert into jewelry values (
+2, 'Midi Ring', 50, 'rose gold', 20);
+Insert into Jewelry values(3, 'Diamond necklace', 15, 'gold', 100);
+insert into jewelry values(4, 'Tennis Bracelet', 25, 'silver', 50);
+insert into jewelry values(5, 'Mood Ring', 15, 'mixed' , 50);
+insert into jewelry values(6, 'Waves spinner ring', 10, 'silver',15);
+insert into jewelry values(7, 'bead bracelet', 50, 'plastic', 10);
+insert into jewelry values(8, 'pink bead bracelet', 50, 'plastic', 12);
+insert into jewelry values(9, 'toe rings', 25, 'gold', 12);
+insert into jewelry values(10,'moonstone rings', 20, 'silver' ,55);
+insert into jewelry values(11, 'blue heart necklace', 30, 'gold', 35);
+insert into jewelry values(12, 'galaxy stone ring', 14, 'silver', 29);
+insert into jewelry values(13, 'eye anklet', 15, 'bead', 30);
+insert into jewelry values(14, 'peach necklace', 18, 'gold', 12);
+insert into jewelry values(15, ' flower bracelet', 25, 'silver', 33);
+
+--Display the database ordered by price.
+Select * from jewelry Order by price asc;
+
+--Display database ordered by Metal
+ select * from jewelry Order by metal asc;
+ 
+ --What are the most popular items ordered whose quantity is over 25?
+
+select * from jewelry where quantity >= 25;
+
